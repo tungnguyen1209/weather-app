@@ -12,7 +12,7 @@ export default function WeatherApp() {
     setLoading(true);
     try {
       // Sử dụng API mẫu hoặc OpenWeatherMap
-      const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=YOUR_API_KEY_HERE`);
+      const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=62f7cfb453e6839b55ab9044ae548196`);
       const data = await res.json();
       if (data.cod === 200) setWeather(data);
       else alert("Không tìm thấy thành phố!");
